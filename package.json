@@ -1,0 +1,21 @@
+{
+  "name": "c94",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "fix": "prettier --write '*.js' 'components/**/*.js' 'pages/**/*.js'"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "^6.1.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-inlinesvg": "^0.8.1",
+    "react-share": "^2.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.0"
+  }
+}
