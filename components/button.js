@@ -1,10 +1,8 @@
 import React from 'react';
-import classnames from 'classnames'
+import classnames from 'classnames';
 
 const Button = ({ children, className, theme = {}, small, large, inverse, ...others }) => (
-  <button className={classnames('Button', { small, large, inverse }, className)}
-    {...others}
-  >
+  <button className={classnames('Button', { small, large, inverse }, className)} {...others}>
     {children}
     <style jsx>{`
       button {
@@ -12,18 +10,18 @@ const Button = ({ children, className, theme = {}, small, large, inverse, ...oth
         text-align: center;
         vertical-align: top;
         position: relative;
-        padding: .6em 1.2em;
+        padding: 0.6em 1.2em;
         cursor: pointer;
         line-height: 1.5;
         font-size: 90%;
-        border-radius: .25em;
+        border-radius: 0.25em;
         overflow: hidden;
         color: ${theme.color};
         background-color: transparent;
         text-decoration: none;
         border: 1px solid ${theme.color};
         transition-property: background-color, color;
-        transition-duration: .2s;
+        transition-duration: 0.2s;
       }
       button:focus {
         outline: 0;
@@ -36,11 +34,11 @@ const Button = ({ children, className, theme = {}, small, large, inverse, ...oth
       }
 
       button.small {
-        padding: .3em .8em;
+        padding: 0.3em 0.8em;
       }
 
       button.large {
-        padding: .7em 2em;
+        padding: 0.7em 2em;
         font-size: 120%;
         box-sizing: border-box;
         border-width: 2px;
@@ -58,8 +56,6 @@ const Button = ({ children, className, theme = {}, small, large, inverse, ...oth
       }
     `}</style>
   </button>
-)
+);
 
-export {
-  Button,
-};
+export { Button };
