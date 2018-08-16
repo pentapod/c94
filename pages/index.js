@@ -24,7 +24,7 @@ const shareText = headerProps.description + ' ' + headerProps.url;
 
 const urls = {
   catalog: 'https://webcatalog.circle.ms/Circle/13906910',
-  // booth: '',
+  booth: 'https://pentapod.booth.pm/items/969754',
   // freeDownload: '',
   twitterShare: 'https://twitter.com/intent/tweet' + `?text=${encodeURIComponent(shareText)}`,
   facebookShare:
@@ -175,11 +175,11 @@ const Home = () => (
                   <strong>¥700</strong>
                   <br />
                   電子版&nbsp;
-                  <strong>¥500</strong>
+                  <strong>¥500</strong>&nbsp;
+                  <a href={urls.booth}>
+                    <Button small theme={{ color: globalColors.primary }}>電子版を購入</Button>
+                  </a>
                   <br />
-                  {/* <a href={urls.booth}>
-                    <Button small theme={{ color: globalColors.text }}>電子版を購入</Button>
-                  </a> */}
                   冊子版購入者は電子版が&nbsp;
                   <strong>¥0!!!</strong>
                   <br />
