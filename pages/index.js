@@ -25,7 +25,7 @@ const shareText = headerProps.description + ' ' + headerProps.url;
 const urls = {
   catalog: 'https://webcatalog.circle.ms/Circle/13906910',
   booth: 'https://pentapod.booth.pm/items/969754',
-  // freeDownload: '',
+  freeDownload: 'https://c94-free-download.harusamex.com',
   twitterShare: 'https://twitter.com/intent/tweet' + `?text=${encodeURIComponent(shareText)}`,
   facebookShare:
     'https://www.facebook.com/dialog/feed' +
@@ -183,9 +183,9 @@ const Home = () => (
                   冊子版購入者は電子版が&nbsp;
                   <strong>¥0!!!</strong>
                   <br />
-                  {/* <a href={urls.freeDownload}>
-                    <Button small theme={{ color: globalColors.text }}>ダウンロードページへ進む</Button>
-                  </a> */}
+                  <a href={urls.freeDownload}>
+                    <Button small theme={{ color: globalColors.primary }}>ダウンロードページへ進む</Button>
+                  </a>
                 </td>
               </tr>
               <tr>
